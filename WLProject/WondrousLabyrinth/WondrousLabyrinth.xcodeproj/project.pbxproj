@@ -13,6 +13,10 @@
 		1B5BCD212BBADF3D00256EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD1F2BBADF3D00256EC6 /* Main.storyboard */; };
 		1B5BCD232BBADF3E00256EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */; };
 		1B5BCD262BBADF3E00256EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD242BBADF3E00256EC6 /* LaunchScreen.storyboard */; };
+		1B5BCD302BBAE0D000256EC6 /* WLNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD2F2BBAE0D000256EC6 /* WLNavigationView.swift */; };
+		1B5BCD332BBAE8F000256EC6 /* SmileySans-Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD322BBAE8F000256EC6 /* SmileySans-Oblique.ttf */; };
+		1B5BCD352BBBF3FD00256EC6 /* ptcg_chs_infos.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD342BBBF3FD00256EC6 /* ptcg_chs_infos.json */; };
+		1B5BCD372BBBFDF600256EC6 /* WLHomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD362BBBFDF600256EC6 /* WLHomeCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B5BCD252BBADF3E00256EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B5BCD272BBADF3E00256EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5BCD2F2BBAE0D000256EC6 /* WLNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNavigationView.swift; sourceTree = "<group>"; };
+		1B5BCD322BBAE8F000256EC6 /* SmileySans-Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SmileySans-Oblique.ttf"; sourceTree = "<group>"; };
+		1B5BCD342BBBF3FD00256EC6 /* ptcg_chs_infos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ptcg_chs_infos.json; sourceTree = "<group>"; };
+		1B5BCD362BBBFDF600256EC6 /* WLHomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHomeCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				1B5BCD192BBADF3D00256EC6 /* AppDelegate.swift */,
 				1B5BCD1B2BBADF3D00256EC6 /* SceneDelegate.swift */,
-				1B5BCD1D2BBADF3D00256EC6 /* ViewController.swift */,
+				1B5BCD312BBAE8DC00256EC6 /* Resources */,
+				1B5BCD2E2BBAE0A100256EC6 /* Scenes */,
+				1B5BCD2D2BBAE09700256EC6 /* VIews */,
 				1B5BCD1F2BBADF3D00256EC6 /* Main.storyboard */,
 				1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */,
 				1B5BCD242BBADF3E00256EC6 /* LaunchScreen.storyboard */,
 				1B5BCD272BBADF3E00256EC6 /* Info.plist */,
 			);
 			path = WondrousLabyrinth;
+			sourceTree = "<group>";
+		};
+		1B5BCD2D2BBAE09700256EC6 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BCD2F2BBAE0D000256EC6 /* WLNavigationView.swift */,
+				1B5BCD362BBBFDF600256EC6 /* WLHomeCellView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		1B5BCD2E2BBAE0A100256EC6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BCD1D2BBADF3D00256EC6 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1B5BCD312BBAE8DC00256EC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BCD322BBAE8F000256EC6 /* SmileySans-Oblique.ttf */,
+				1B5BCD342BBBF3FD00256EC6 /* ptcg_chs_infos.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5BCD352BBBF3FD00256EC6 /* ptcg_chs_infos.json in Resources */,
+				1B5BCD332BBAE8F000256EC6 /* SmileySans-Oblique.ttf in Resources */,
 				1B5BCD262BBADF3E00256EC6 /* LaunchScreen.storyboard in Resources */,
 				1B5BCD232BBADF3E00256EC6 /* Assets.xcassets in Resources */,
 				1B5BCD212BBADF3D00256EC6 /* Main.storyboard in Resources */,
@@ -140,7 +178,9 @@
 			files = (
 				1B5BCD1E2BBADF3D00256EC6 /* ViewController.swift in Sources */,
 				1B5BCD1A2BBADF3D00256EC6 /* AppDelegate.swift in Sources */,
+				1B5BCD372BBBFDF600256EC6 /* WLHomeCellView.swift in Sources */,
 				1B5BCD1C2BBADF3D00256EC6 /* SceneDelegate.swift in Sources */,
+				1B5BCD302BBAE0D000256EC6 /* WLNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,16 +335,18 @@
 				DEVELOPMENT_TEAM = RSA8WT4A52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WondrousLabyrinth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "奇迹迷宫";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mim0sa.WondrousLabyrinth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -323,16 +365,18 @@
 				DEVELOPMENT_TEAM = RSA8WT4A52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WondrousLabyrinth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "奇迹迷宫";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mim0sa.WondrousLabyrinth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

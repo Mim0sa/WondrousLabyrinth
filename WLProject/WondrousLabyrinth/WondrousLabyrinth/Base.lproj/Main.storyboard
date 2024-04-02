@@ -1,24 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g1w-1d-k4V">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SmileySans-Oblique.ttf">
+            <string>SmileySans-Oblique</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WondrousLabyrinth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUi-de-cRO" customClass="WLNavigationView" customModule="WondrousLabyrinth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奇迹迷宫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEB-CT-8wz">
+                                        <rect key="frame" x="20" y="0.0" width="96" height="50"/>
+                                        <fontDescription key="fontDescription" name="SmileySans-Oblique" family="Smiley Sans" pointSize="30"/>
+                                        <color key="textColor" name="WondrousLabyrinth"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-eY-hqD">
+                                        <rect key="frame" x="339" y="1" width="54" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="5ln-nj-v3r"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="JZE-dj-ie3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system" title="">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="18"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LIR-eY-hqD" firstAttribute="centerY" secondItem="cUi-de-cRO" secondAttribute="centerY" id="0P5-BQ-W6G"/>
+                                    <constraint firstItem="aEB-CT-8wz" firstAttribute="leading" secondItem="cUi-de-cRO" secondAttribute="leading" constant="20" id="Jd8-oe-fpp"/>
+                                    <constraint firstItem="aEB-CT-8wz" firstAttribute="top" secondItem="cUi-de-cRO" secondAttribute="top" id="PTC-qh-mgZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="QQP-Nw-fbF"/>
+                                    <constraint firstAttribute="trailing" secondItem="LIR-eY-hqD" secondAttribute="trailing" id="nm2-vf-8BW"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aEB-CT-8wz" secondAttribute="trailing" constant="20" symbolic="YES" id="oed-4W-m92"/>
+                                    <constraint firstItem="LIR-eY-hqD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aEB-CT-8wz" secondAttribute="trailing" constant="8" symbolic="YES" id="rtb-Ru-zFG"/>
+                                    <constraint firstAttribute="bottom" secondItem="aEB-CT-8wz" secondAttribute="bottom" id="tMF-R8-4cW"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdR-e1-oVa">
+                                <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sx-7b-TKP">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="655.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlD-g8-qCf" customClass="WLHomeCellView" customModule="WondrousLabyrinth" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="353" height="188.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="PlD-g8-qCf" secondAttribute="height" multiplier="15:8" id="gYL-g1-i4e"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1o-Xl-3qc" customClass="WLHomeCellView" customModule="WondrousLabyrinth" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="228.33333333333331" width="157.33333333333334" height="235.66666666666669"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="f1o-Xl-3qc" secondAttribute="height" multiplier="1:1.5" id="0H1-5u-I2p"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-xR-b0f" customClass="WLHomeCellView" customModule="WondrousLabyrinth" customModuleProvider="target">
+                                                <rect key="frame" x="197.33333333333337" y="228.33333333333331" width="175.66666666666663" height="141.33333333333331"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePj-Ki-FfG" customClass="WLHomeCellView" customModule="WondrousLabyrinth" customModuleProvider="target">
+                                                <rect key="frame" x="197.33333333333337" y="389.66666666666669" width="175.66666666666663" height="74.333333333333314"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYe-Rg-4Wb" customClass="WLHomeCellView" customModule="WondrousLabyrinth" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="483.99999999999994" width="353" height="151.33333333333331"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="MYe-Rg-4Wb" secondAttribute="height" multiplier="3.5:1.5" id="MDy-41-owq"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="zwv-xR-b0f" firstAttribute="top" secondItem="PlD-g8-qCf" secondAttribute="bottom" constant="20" id="B6X-Nn-93u"/>
+                                            <constraint firstItem="f1o-Xl-3qc" firstAttribute="width" secondItem="0sx-7b-TKP" secondAttribute="width" multiplier="0.4" id="BAE-4m-Zm7"/>
+                                            <constraint firstItem="ePj-Ki-FfG" firstAttribute="leading" secondItem="f1o-Xl-3qc" secondAttribute="trailing" constant="20" id="BwJ-oY-42n"/>
+                                            <constraint firstItem="f1o-Xl-3qc" firstAttribute="leading" secondItem="0sx-7b-TKP" secondAttribute="leading" constant="20" id="DHL-An-d7z"/>
+                                            <constraint firstItem="zwv-xR-b0f" firstAttribute="height" secondItem="f1o-Xl-3qc" secondAttribute="height" multiplier="0.6" id="Fmm-no-sFn"/>
+                                            <constraint firstItem="ePj-Ki-FfG" firstAttribute="top" secondItem="zwv-xR-b0f" secondAttribute="bottom" constant="20" id="JAt-tL-eH1"/>
+                                            <constraint firstItem="PlD-g8-qCf" firstAttribute="leading" secondItem="0sx-7b-TKP" secondAttribute="leading" constant="20" id="O0B-4u-jlC"/>
+                                            <constraint firstAttribute="trailing" secondItem="ePj-Ki-FfG" secondAttribute="trailing" constant="20" id="YNz-NO-Xxu"/>
+                                            <constraint firstAttribute="trailing" secondItem="MYe-Rg-4Wb" secondAttribute="trailing" constant="20" id="Yoj-Uj-ScR"/>
+                                            <constraint firstItem="ePj-Ki-FfG" firstAttribute="bottom" secondItem="f1o-Xl-3qc" secondAttribute="bottom" id="aqm-vx-9im"/>
+                                            <constraint firstItem="PlD-g8-qCf" firstAttribute="top" secondItem="0sx-7b-TKP" secondAttribute="top" constant="20" id="cMM-EG-8CJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="PlD-g8-qCf" secondAttribute="trailing" constant="20" id="cfe-9T-2TK"/>
+                                            <constraint firstItem="f1o-Xl-3qc" firstAttribute="top" secondItem="PlD-g8-qCf" secondAttribute="bottom" constant="20" id="kgi-qe-mQU"/>
+                                            <constraint firstItem="MYe-Rg-4Wb" firstAttribute="top" secondItem="ePj-Ki-FfG" secondAttribute="bottom" constant="20" id="mbX-Em-FsJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="MYe-Rg-4Wb" secondAttribute="bottom" constant="20" id="n94-nT-uok"/>
+                                            <constraint firstItem="MYe-Rg-4Wb" firstAttribute="leading" secondItem="0sx-7b-TKP" secondAttribute="leading" constant="20" id="nfs-9R-0zd"/>
+                                            <constraint firstAttribute="trailing" secondItem="zwv-xR-b0f" secondAttribute="trailing" constant="20" id="ppc-tG-faE"/>
+                                            <constraint firstItem="zwv-xR-b0f" firstAttribute="leading" secondItem="f1o-Xl-3qc" secondAttribute="trailing" constant="20" id="tnA-WR-PqO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="L0j-dZ-oMe" firstAttribute="trailing" secondItem="0sx-7b-TKP" secondAttribute="trailing" id="Tkv-IN-x2O"/>
+                                    <constraint firstItem="0sx-7b-TKP" firstAttribute="leading" secondItem="FJd-Tz-NTK" secondAttribute="leading" id="aXu-cb-dJ3"/>
+                                    <constraint firstItem="0sx-7b-TKP" firstAttribute="leading" secondItem="L0j-dZ-oMe" secondAttribute="leading" id="bFS-ag-Zuy"/>
+                                    <constraint firstItem="0sx-7b-TKP" firstAttribute="trailing" secondItem="FJd-Tz-NTK" secondAttribute="trailing" id="dGG-yn-vE1"/>
+                                    <constraint firstItem="0sx-7b-TKP" firstAttribute="top" secondItem="FJd-Tz-NTK" secondAttribute="top" id="gvl-Br-oOk"/>
+                                    <constraint firstItem="0sx-7b-TKP" firstAttribute="bottom" secondItem="FJd-Tz-NTK" secondAttribute="bottom" id="sCS-o7-5P8"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FJd-Tz-NTK"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="L0j-dZ-oMe"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="WondrousLabyrinth"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdR-e1-oVa" secondAttribute="trailing" id="3Ur-ze-vyC"/>
+                            <constraint firstItem="cUi-de-cRO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7sK-3p-0lV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cUi-de-cRO" secondAttribute="trailing" id="AAI-JJ-fcu"/>
+                            <constraint firstItem="jdR-e1-oVa" firstAttribute="top" secondItem="cUi-de-cRO" secondAttribute="bottom" id="Rv3-ua-p6J"/>
+                            <constraint firstItem="cUi-de-cRO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hPu-7j-Yh0"/>
+                            <constraint firstAttribute="bottom" secondItem="jdR-e1-oVa" secondAttribute="bottom" id="hmY-8v-yka"/>
+                            <constraint firstItem="jdR-e1-oVa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ubv-9G-yUo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="f5h-Pg-fCA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="916.79389312977094" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Llu-kd-mhJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="g1w-1d-k4V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7fz-2p-0rD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l2R-LB-5Wt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdf-68-Ud0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <namedColor name="WondrousLabyrinth">
+            <color red="0.94117647058823528" green="0.45098039215686275" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
