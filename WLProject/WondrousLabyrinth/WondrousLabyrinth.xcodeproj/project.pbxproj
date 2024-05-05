@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B38E8EA2BBEA0AA00E01305 /* WLCardBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38E8E92BBEA0AA00E01305 /* WLCardBrain.swift */; };
+		1B38E8ED2BC03B4D00E01305 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1B38E8EC2BC03B4D00E01305 /* Kingfisher */; };
 		1B5BCD1A2BBADF3D00256EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD192BBADF3D00256EC6 /* AppDelegate.swift */; };
 		1B5BCD1C2BBADF3D00256EC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD1B2BBADF3D00256EC6 /* SceneDelegate.swift */; };
-		1B5BCD1E2BBADF3D00256EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD1D2BBADF3D00256EC6 /* ViewController.swift */; };
+		1B5BCD1E2BBADF3D00256EC6 /* WLHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD1D2BBADF3D00256EC6 /* WLHomeVC.swift */; };
 		1B5BCD212BBADF3D00256EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD1F2BBADF3D00256EC6 /* Main.storyboard */; };
 		1B5BCD232BBADF3E00256EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */; };
 		1B5BCD262BBADF3E00256EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD242BBADF3E00256EC6 /* LaunchScreen.storyboard */; };
@@ -17,13 +19,20 @@
 		1B5BCD332BBAE8F000256EC6 /* SmileySans-Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD322BBAE8F000256EC6 /* SmileySans-Oblique.ttf */; };
 		1B5BCD352BBBF3FD00256EC6 /* ptcg_chs_infos.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BCD342BBBF3FD00256EC6 /* ptcg_chs_infos.json */; };
 		1B5BCD372BBBFDF600256EC6 /* WLHomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD362BBBFDF600256EC6 /* WLHomeCellView.swift */; };
+		1B5BCD3B2BBE9AF500256EC6 /* WLJsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BCD3A2BBE9AF500256EC6 /* WLJsonManager.swift */; };
+		1B770BA42BC6596500390B56 /* WLCardDexFilterOptionScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B770BA32BC6596500390B56 /* WLCardDexFilterOptionScrollView.swift */; };
+		1B770BA62BC66B1B00390B56 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B770BA52BC66B1B00390B56 /* Extensions.swift */; };
+		1B770BA82BC6BF6F00390B56 /* WLCardDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B770BA72BC6BF6F00390B56 /* WLCardDetailVC.swift */; };
+		1B9631FF2BC3F58500645492 /* WLCardDexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9631FE2BC3F58500645492 /* WLCardDexVC.swift */; };
+		1BE75F402BC7F37C00FFDB93 /* WLCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE75F3F2BC7F37C00FFDB93 /* WLCardDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B38E8E92BBEA0AA00E01305 /* WLCardBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCardBrain.swift; sourceTree = "<group>"; };
 		1B5BCD162BBADF3D00256EC6 /* WondrousLabyrinth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WondrousLabyrinth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5BCD192BBADF3D00256EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B5BCD1B2BBADF3D00256EC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B5BCD1D2BBADF3D00256EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B5BCD1D2BBADF3D00256EC6 /* WLHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHomeVC.swift; sourceTree = "<group>"; };
 		1B5BCD202BBADF3D00256EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B5BCD252BBADF3E00256EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +41,12 @@
 		1B5BCD322BBAE8F000256EC6 /* SmileySans-Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SmileySans-Oblique.ttf"; sourceTree = "<group>"; };
 		1B5BCD342BBBF3FD00256EC6 /* ptcg_chs_infos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ptcg_chs_infos.json; sourceTree = "<group>"; };
 		1B5BCD362BBBFDF600256EC6 /* WLHomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHomeCellView.swift; sourceTree = "<group>"; };
+		1B5BCD3A2BBE9AF500256EC6 /* WLJsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLJsonManager.swift; sourceTree = "<group>"; };
+		1B770BA32BC6596500390B56 /* WLCardDexFilterOptionScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCardDexFilterOptionScrollView.swift; sourceTree = "<group>"; };
+		1B770BA52BC66B1B00390B56 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1B770BA72BC6BF6F00390B56 /* WLCardDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCardDetailVC.swift; sourceTree = "<group>"; };
+		1B9631FE2BC3F58500645492 /* WLCardDexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCardDexVC.swift; sourceTree = "<group>"; };
+		1BE75F3F2BC7F37C00FFDB93 /* WLCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCardDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B38E8ED2BC03B4D00E01305 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,10 +83,11 @@
 				1B5BCD192BBADF3D00256EC6 /* AppDelegate.swift */,
 				1B5BCD1B2BBADF3D00256EC6 /* SceneDelegate.swift */,
 				1B5BCD312BBAE8DC00256EC6 /* Resources */,
+				1B5BCD382BBE9A9B00256EC6 /* Models */,
+				1B5BCD392BBE9AB200256EC6 /* Service */,
 				1B5BCD2E2BBAE0A100256EC6 /* Scenes */,
 				1B5BCD2D2BBAE09700256EC6 /* VIews */,
 				1B5BCD1F2BBADF3D00256EC6 /* Main.storyboard */,
-				1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */,
 				1B5BCD242BBADF3E00256EC6 /* LaunchScreen.storyboard */,
 				1B5BCD272BBADF3E00256EC6 /* Info.plist */,
 			);
@@ -89,7 +106,11 @@
 		1B5BCD2E2BBAE0A100256EC6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1B5BCD1D2BBADF3D00256EC6 /* ViewController.swift */,
+				1B5BCD1D2BBADF3D00256EC6 /* WLHomeVC.swift */,
+				1B9631FE2BC3F58500645492 /* WLCardDexVC.swift */,
+				1B770BA32BC6596500390B56 /* WLCardDexFilterOptionScrollView.swift */,
+				1B770BA72BC6BF6F00390B56 /* WLCardDetailVC.swift */,
+				1BE75F3F2BC7F37C00FFDB93 /* WLCardDetailView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -97,10 +118,28 @@
 		1B5BCD312BBAE8DC00256EC6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1B5BCD222BBADF3E00256EC6 /* Assets.xcassets */,
 				1B5BCD322BBAE8F000256EC6 /* SmileySans-Oblique.ttf */,
 				1B5BCD342BBBF3FD00256EC6 /* ptcg_chs_infos.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B5BCD382BBE9A9B00256EC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B38E8E92BBEA0AA00E01305 /* WLCardBrain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B5BCD392BBE9AB200256EC6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BCD3A2BBE9AF500256EC6 /* WLJsonManager.swift */,
+				1B770BA52BC66B1B00390B56 /* Extensions.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +158,9 @@
 			dependencies = (
 			);
 			name = WondrousLabyrinth;
+			packageProductDependencies = (
+				1B38E8EC2BC03B4D00E01305 /* Kingfisher */,
+			);
 			productName = WondrousLabyrinth;
 			productReference = 1B5BCD162BBADF3D00256EC6 /* WondrousLabyrinth.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +189,9 @@
 				Base,
 			);
 			mainGroup = 1B5BCD0D2BBADF3D00256EC6;
+			packageReferences = (
+				1B38E8EB2BC03B4D00E01305 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1B5BCD172BBADF3D00256EC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,11 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B5BCD1E2BBADF3D00256EC6 /* ViewController.swift in Sources */,
+				1BE75F402BC7F37C00FFDB93 /* WLCardDetailView.swift in Sources */,
+				1B5BCD1E2BBADF3D00256EC6 /* WLHomeVC.swift in Sources */,
 				1B5BCD1A2BBADF3D00256EC6 /* AppDelegate.swift in Sources */,
 				1B5BCD372BBBFDF600256EC6 /* WLHomeCellView.swift in Sources */,
+				1B9631FF2BC3F58500645492 /* WLCardDexVC.swift in Sources */,
+				1B770BA42BC6596500390B56 /* WLCardDexFilterOptionScrollView.swift in Sources */,
+				1B770BA62BC66B1B00390B56 /* Extensions.swift in Sources */,
 				1B5BCD1C2BBADF3D00256EC6 /* SceneDelegate.swift in Sources */,
+				1B38E8EA2BBEA0AA00E01305 /* WLCardBrain.swift in Sources */,
+				1B5BCD3B2BBE9AF500256EC6 /* WLJsonManager.swift in Sources */,
 				1B5BCD302BBAE0D000256EC6 /* WLNavigationView.swift in Sources */,
+				1B770BA82BC6BF6F00390B56 /* WLCardDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B38E8EB2BC03B4D00E01305 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B38E8EC2BC03B4D00E01305 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B38E8EB2BC03B4D00E01305 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B5BCD0E2BBADF3D00256EC6 /* Project object */;
 }

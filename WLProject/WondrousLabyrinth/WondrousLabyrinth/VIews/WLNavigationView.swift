@@ -9,9 +9,11 @@ import UIKit
 
 class WLNavigationView: UIView {
     
+    var needShowSeparatorLine = true
+    
     static let height: CGFloat = 0.5
     
-    let separatorLine = UIView()
+    private let separatorLine = UIView()
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -25,7 +27,11 @@ class WLNavigationView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        separatorLine.frame = CGRect(x: 0, y: 50 - 0.5, width: frame.width, height: 0.5)
+        if needShowSeparatorLine {
+            separatorLine.frame = CGRect(x: 0, y: 50 - 0.5, width: frame.width, height: 0.5)
+        } else {
+            separatorLine.frame = CGRect()
+        }
     }
     
 }
